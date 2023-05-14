@@ -1,0 +1,558 @@
+<!DOCTYPE html> <!-- tipo de archivo --> 
+<html lang= "es"> <!--para idioma--> 
+
+
+<head>
+	<metas charset "utf-8"/>
+	<title> Main Page </title>
+	<style>
+
+		@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap");
+		@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+
+
+		body {
+
+			background-color: grey;
+
+		}
+
+		.bloque {
+			position: relative;
+			width: 600px;
+
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+
+			background-color: rgba(0, 0, 20, .25);
+	/*		background-image: url("imagen/bloque.jpg");*/
+			background-origin: border-box;
+			background-size: 100% 100%;
+			border: 1px solid grey;
+
+			margin: 0px 0px 8px 0px;
+			padding: 0px 16px 0px 16px;
+
+		}
+
+		.bloque h1 {
+			font-family: 'Great Vibes';
+			font-size: 60px;
+			letter-spacing: 2px;
+		}
+
+		.boton {
+			position: relative;
+			top: -10px;
+
+	        display: flex;
+	        flex-direction: column;
+	        justify-content: center;
+
+			background-image: url("imagen/bloque.jpg");
+			background-size: 100% 100%;
+			height: 40px;
+			width: 100px;
+		}
+
+		.rangos {
+			position: relative;
+
+			display: flex;
+			flex-direction: column;
+			justify-content: space-evenly;
+
+			background-color: grey;
+			width: 80%;
+			height:35%;
+
+			margin: 8px 8px 8px 8px;
+		}
+
+		.textoRangos {
+			position: relative;
+
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+
+			background-color:;
+			width: 100%;
+			heigth: 100%;
+		}
+
+		.textoRangos h2,h3 {
+			height: 5px;
+		}
+
+		.fotos {
+			position: relative;
+
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			justify-content: center;
+
+			background-color: unset;
+			width:100%;
+			height: 200px;
+		}
+
+		.fotos div {
+			background-size: cover;
+			width: 35%;
+			heigth: 100%;
+			margin:10px;
+		}
+
+		#imagen1 {
+			background-image: url("imagen/dibujos_concept/Juana_de_Arco(Armadura).png");
+		}
+
+		#imagen2 {
+			background-image: url("imagen/dibujos_concept/Juana_de_Arco(Pobre).png");
+		}
+
+		#imagen3 {
+			background-image: url("imagen/dibujos_concept/boceto_pira.jpg");
+		}
+
+		#imagen4 {
+			background-image: url("imagen/dibujos_concept/boceto_sergio.jpg");
+		}
+
+		#imagen5 {
+			background-image: url("imagen/dibujos_concept/mapa_laura.jpg");
+		}
+
+		#imagen6 {
+			background-image: url("imagen/dibujos_concept/juana_laura.jpg");
+		}
+
+		.bloque#navegacion{
+			position: sticky;
+			top: 0px;
+			bottom: 0px;
+
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			z-index: 10;
+
+			background-image: url("imagen/dibujos_concept/mapa_laura_navegacion.jpg");
+			background-size: 100%;
+			background-color: white;
+			height: 75px;
+			width: 100%;
+			border: 4px solid black;
+
+			margin: 0px 0px 0px 0px;
+
+		}
+
+		#navegacion div {
+			margin:5px;
+		}
+
+		.bloque#intro {
+
+			display:flex;
+			flex-direction: column;
+			flex-grow: 1;
+			flex-shrink: 1;
+			flex-wrap: nowrap;
+
+			background-color: unset;
+			background-image: url("imagen/alfombra.png");
+			top: 40px;
+			height: 500px;
+			width: 800px;
+			border: unset;
+
+			margin: 0px 0px 16px 0px;
+
+		}
+
+		.bloque#ayudanos {
+			align-items: unset;
+		}
+
+	    #pagina {
+	    	display: flex;
+	  		flex-direction: column;
+	  		justify-content: space-evenly;
+			align-items: center;
+			text-align:center;
+
+			background-image: url("imagen/fondo_marmol.jpg");
+			border: 4px solid;
+			width: 100%;
+			height:100%;
+	    }
+
+	    #cuerpo {
+	    	position: relative;
+
+	    	display: flex;
+	  		flex-direction: row;
+	  		justify-content: space-evenly;
+			align-items: unset;
+			text-align:center;
+
+			width: 100%;
+			height: auto;
+	    }
+
+	    .margenes {
+			position: sticky;
+			top: 80px;
+
+			display: flex;
+			flex-direction: column;
+			justify-content: space-evenly;
+			align-items: center;
+
+			background-color:;
+			width: 20%;
+			height: 600px;
+
+			margin: 40px 16px 16px 16px;
+		}
+
+		#columnaCentral{
+			position: relative;
+			display: flex;
+			flex-direction: column;
+
+			margin: 40px 0px 16px 0px;
+		}
+
+		#portada {
+			position: relative;
+
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+
+			background-image: url("imagen/fondo_angeles.jpg");
+			background-size: cover;
+			width:100%;
+			height: 600px;
+			border: 5px solid black;
+
+			margin: 0px 0px 0px 0px;
+		}
+
+		#titulo {
+			position: sticky;
+			top: 200px;
+
+			background-image: url("imagen/titulo.png");
+			background-size: cover;
+			height: 150px;
+			width: 530px;
+
+		}
+
+		#trailer {
+			position: relative;
+			top: 10px;
+
+			display: flex;
+			flex-grow: 1;
+
+			justify-content: center;
+			align-items: center;
+			height: 500px;
+			width: 600px;
+			padding: 16px;
+			margin: 24px 0px 0px 0px;
+
+			background-color: darkred;
+		}
+
+		#descripcion {
+			display: flex;
+			flex-grow: 1;
+			flex-shrink: 1;
+
+			justify-content: right;
+			align-items: center;
+			height: 75px;
+			width: 600px;
+			margin: 30px;
+			padding: 10px;
+
+			background-color: unset;
+		}
+
+		#contri {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-evenly;
+
+		}
+
+		#redesYDisclaimer {
+
+			width: 100%;
+			height: 200px;
+			margin: 0px;
+		}
+
+		#redes {
+			position: relative;
+
+			display: flex;
+			flex-direction: row;
+			justify-content: space-evenly;
+
+			width: 50%;
+		}
+
+		#redes div {
+			width: 40px;
+			height: 40px;
+		}
+
+		#instagram {
+			background-image: url("imagen/instagram.png");
+			background-size: 100% 100%;
+		}
+
+		#twitter {
+			background-image: url("imagen/twitter.png");
+			background-size: 100% 100%;
+		}
+
+		#youtube {
+			background-image: url("imagen/youtube.png");
+			background-size: 100% 100%;
+		}
+
+
+
+	</style>
+
+</head> 
+
+<body>
+
+	<div id="portada">
+		<div id="titulo">
+		</div>
+	</div>
+
+	<div id="pagina">
+
+		<div class="bloque" id="navegacion">
+				<div> JUANA </div>
+				<div> <a href="#contribuciones"> CONTRIBUCIONES </a> </div>
+				<div> <a href="#info"> INFORMACIÓN </a> </div>
+				<div> <a href="#arte"> ARTE DEL JUEGO </a> </div>
+				<div> PREGUNTAS FRECUENTES </div>
+		</div>
+
+		<div class="bloque" id="intro">
+				<div id="trailer">
+					<iframe width="100%" height="100%" src="https://www.youtube.com/embed/3C_KO2Fmqes" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				</div>
+				<div class="texto" id="descripcion">
+					<p>¡Echa un vistazo al tráiler de "JUANA DE ARCO: LA LLAMADA DE DIOS",<br>una aventura conversacional con rigor histórico que saldrá a la venta este mismo año!</p>
+				</div>
+		</div>
+
+		<div id="cuerpo">
+
+			<div class="margenes">
+				<div class= "rangos">
+					<div class="textoRangos">
+						<h2> SOLDADO </h2>
+					    <h3> 5€ </h3>
+				    </div>
+				    <div class="textoRangos">
+				    	<p>-Acceso a una beta cerrada del juego.<br><br> <a href="#soldado"> SABER MÁS </a> </p>
+				    </div>
+			    </div>
+			    <div class= "rangos">
+						<div class="textoRangos">
+							<h2> DELFÍN </h2>
+						    <h3> 20€ </h3>
+					    </div>
+					    <div class="textoRangos">
+					    	<p>-Envío de un producto de merchandising a elegir entre: póster, pegatinas o pines.<br><br> <a href="#delfin"> SABER MÁS </a> </p>
+					    </div>
+				    </div>
+			</div> 
+
+			<div id="columnaCentral">
+				<div class="bloque" id="info">
+					<h1>Información General</h1>
+					<p>"Juana de Arco: La llamada de Dios" es una aventura conversacional al más puro estilo de los clásicos Point&Click. Como el propio nombre del juego indica, encarnaremos a la más que famosa e importante figura Juana de Arco, quien fue clave durante el desarrollo de la Guerra de los Cien Años. A lo largo del juego recorreremos la historia de su vida, conociendo de primera mano todos los hechos que la llevaron a ser tan recordada hoy en día. (fotillo juana en png) </p>
+					<h2> REVIVE LA HISTORIA DE JUANA DE ARCO </h2>
+					<p> Desde Abracadabrante Studios queremos brindarte una experiencia lo más fiel y cercana a la historia real de Juana de Arco; que atravieses todas las dificultades de su vida, como el tener que escapar de su casa a una temprana edad o tener que escuchar juicios constantes hacia ella, debido a las voces que acostumbraba a escuchar. No obstante, también buscamos que disfrutes de todas las glorias de su viaje, lo magnífico de que una simple joven que vivía en el pequeño pueblo de Domrémy supusiese un antes y un después en el transcurso de uno de los conflictos bélicos más grandes del pasado. </p>
+					<h2> CONOCE A PERSONAJES HISTÓRICOS </h2>
+					<p> A lo largo de tu viaje conocerás a grandes personajes que tuvieron gran importancia en la evolución de nuestra protagonista, guiándola en sus acciones o incluso marcando puntos de inflexión en su propia vida. Nos gustaría presentarte a algunos de ellos, aunque no entraremos en grandes detalles, puesto que creemos que la mejor forma de conocerlos es jugando. <br>
+				<br>
+					<strong>- Carlos VII:</strong> Una gran parte del pueblo francés, incluida nuestra protagonista, esperan con ansias que se convierta en el monarca de la nación. Pese a ser una persona peculiar y un poco extravagante, es el primero en depositar una confianza ciega en Juana, permitiéndole llevar a cabo su misión. (Aquí pondria fotos de cada uno de los personajes, pero como no tenemos bocetos nose) <br>
+				<br>
+					<strong> - San Miguel Arcángel:</strong> Es una de las tres figuras divinas que se le aparecen a Juana esporádicamente para darle consejos de su viaje. San Miguel en concreto es el encargado de ayudar a nuestra protagonista en lo relacionado con los conflictos bélicos, puesto que Juana no cuenta con ningún tipo de instrucción ni de formación militar. Pese a su aspecto rudo, es una persona amable y gentil. <br>
+				<br>
+					<strong>  - Simon Musnier: </strong> Es el vecino de Juana, desde pequeños siempre han mantenido una gran relación. Es un joven que sufre de una salud muy delicada, enfermando con frecuencia. Nuestra protagonista lleva años cuidando de él, por lo que Simon tiene un gran aprecio por ella. Estas pequeñas acciones dotan a Juana de una gran fama por su amabilidad en su pueblo natal, Domrémy. Debido a esto, a medida que aumente nuestra popularidad por el territorio francés, será frecuente que diferentes habitantes de las zonas que exploremos nos soliciten su ayuda durante nuestro viaje. Aunque Juana no está obligada a ayudarles,  siempre tratará de ayudar a quién lo necesite. En ocasiones, alguna de estas ayudas altruistas se verá fuertemente recompensada, por lo que te animamos a expandir tu bondad... <br>
+					<br>
+					 </p>
+					<h2> SUMÉRGETE EN SUS BATALLAS... </h2>
+					<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." </p>
+					<h2> ... Y ROMPE LA BARRERA CON EL MÁS ALLÁ</h2>
+					<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." </p>
+				</div>
+
+				<div class="bloque" id="arte">
+					<h1>Arte del Juego</h1>
+					<p>A continuación, se muestran algunos de los concepts arts realizados por nuestro equipo de arte durante la primera etapa de desarrollo del juego. </p>
+					<div class="fotos">
+						<div id="imagen1"> </div>
+						<div id="imagen2"> </div>
+					</div>
+					<div class="fotos">
+						<div id="imagen3"> </div>
+						<div id="imagen4"> </div>
+					</div>
+					<div class="fotos">
+						<div id="imagen5"> </div>
+						<div id="imagen6"> </div>
+					</div>
+				</div>
+
+				<div class="bloque" id="contribuciones">
+					<h1>Contribuciones</h1>
+					<div class= "rangos" id="soldado">
+						<div class="textoRangos">
+							<h2> SOLDADO </h2>
+						    <h3> 5€ </h3>
+					    </div>
+					    <div class="textoRangos">
+					    	<p>-Acceso a una beta cerrada del juego.<br><br> -Imágenes y fondos virtuales exclusivos.<br><br> -Aparición como contribuyente en la página web.<br><br> -En el momento de compra del juego, recibirás una insignia especial dentro de este correspondiente a tu plan.</p>
+					    </div>
+				    </div>
+				    <div class= "rangos" id="delfin">
+						<div class="textoRangos">
+							<h2> DELFÍN </h2>
+						    <h3> 20€ </h3>
+					    </div>
+					    <div class="textoRangos">
+					    	<p>-Acceso a una beta cerrada del juego. <br><br> -Imágenes y fondos virtuales exclusivos. <br><br>-Aparición como contribuyente en la página web. <br><br>-En el momento de compra del juego, recibirás una insignia especial dentro de este correspondiente a tu plan. <br><br>-Clave del juego digital. <br><br>-Envío de un producto de merchandising a elegir entre: póster, pegatinas o pines.</p>
+					    </div>
+				    </div>
+				    <div class= "rangos" id="doncella">
+						<div class="textoRangos">
+							<h2> DONCELLA </h2>
+						    <h3> 50€ </h3>
+					    </div>
+					    <div class="textoRangos">
+					    	<p>-Acceso a una beta cerrada del juego. <br><br>-Imágenes y fondos virtuales exclusivos. <br><br>-Aparición como contribuyente en la página web. <br><br>-En el momento de compra del juego, recibirás una insignia especial dentro de este correspondiente a tu plan. <br><br>-Envío de un producto de merchandising a elegir entre: póster, pegatinas o pines. <br><br>-Código de descarga de la banda sonora oficial. <br><br>-Envío del juego en físico en la plataforma deseada (en caso de elegir PC, se proporcionará la clave digital).</p>
+					    </div>
+				    </div>
+				    <div class= "rangos" id="divino">
+						<div class="textoRangos">
+							<h2> DIVINO </h2>
+						    <h3> 200€ </h3>
+					    </div>
+					    <div class="textoRangos">
+					    	<p>-Acceso a una beta cerrada del juego. <br><br>-Imágenes y fondos virtuales exclusivos. <br><br>-Aparición como contribuyente en la página web. <br><br>-En el momento de compra del juego, recibirás una insignia especial dentro de este correspondiente a tu plan. <br><br>-Envío del juego en físico en la plataforma deseada (en caso de elegir PC, se proporcionará la clave digital). <br><br>-Este juego será una edición exclusiva que incluirá: póster, pegatinas, pines, CD de la banda sonora y unas ilustraciones firmadas por el equipo de desarrollo. <br><br>-Aparición en los créditos del juego. <br><br>-Posibilidad de nombrar a un personaje del juego como desees.</p>
+					    </div>
+				    </div>
+				</div>
+
+				<div class="bloque" id="PREGUNTAS">
+					<h1>Objetivos</h1>
+					<p> <strong>1º- 5.000€</strong> <br>
+					Lanzamiento del juego en Steam: 6 capítulos rejugables, libro de arte digital y banda sonora digital.<br>
+					Campaña de publicidad.
+					<br>
+					<strong>2º- 10.000€</strong> <br>
+					Lanzamiento de la Edición Física<br>
+					Lanzamiento de la Edición Especial (con libro de arte del juego)<br>
+					Lanzamiento de la Edición Coleccionista (con banda sonora y figura)
+					<br>
+					<strong>3º- 20.000€</strong> <br>
+					Lanzamiento del DLC JEANNE D'ARC: Justicia Divina, en el cual los jugadores vivirán en primera persona el juicio en el que Juana quedó absuelta de sus supuestos crímenes, décadas después de su muerte.<br>
+					<br>
+					</p> 
+				</div>
+
+				<div class="bloque" id="PREGUNTAS">
+					<h1>Preguntas Frecuentes</h1>
+					<p> <strong> ¿Tenéis planeado el lanzamiento del juego en otras plataformas además de las ya anunciadas? </strong> <br>
+					No está en nuestra mente preparar el juego para lanzarlo en otras plataformas. El juego será lanzado para PC, Nintendo Switch y dispositivos móviles ya que son las plataformas que nos permiten explotar al máximo la jugabilidad. <br>
+					<br>
+					<strong> ¿A dónde van a parar exactamente mis donaciones? </strong> <br>
+					Como mencionamos en el apartado correspondiente, todas las donaciones se dirigen únicamente al desarrollo del juego. Somos un equipo de seis personas que llevamos trabajando más de un año en este proyecto, por lo que requerimos de esta financiación externa para conseguir que vea la luz en un futuro cercano. Estamos muy cerca de nuestra meta, por lo que os agradeceríamos infinitamente que nos ayudéis a alcanzarla. <br>
+					<br>
+					<strong> No puedo contribuir económicamente. ¿Puedo ayudaros de alguna otra forma? </strong> <br>
+					¡Claro! Toda ayuda es poca. Conocemos de primera mano las dificultades económicas, por lo que entendemos a la perfección que haya personas interesadas en el proyecto que no puedan ayudar con una donación. No obstante, hay otras labores que nos ayudan mucho, como dar a conocer el juego a tus conocidos o promocionarlo en las redes sociales, y así conseguir que llegue al máximo número de personas posibles. Cualquier apoyo en nuestras redes también nos ayuda muchísimo.<br>
+					<br>
+					<strong> ¿Contáis con algún otro proyecto al que pueda echar un vistazo? </strong> <br>
+					Lastimosamente, este es el primer proyecto en el que trabajamos como un estudio profesional. Aunque nuestros miembros han desarrollado juegos previamente, estos no han sido lanzados al mercado oficialmente. No obstante, confiamos en que este lanzamiento nos permita crecer como estudio y desarrollar otras ideas (que nos morimos de ganas de compartir con vosotros). <br>
+					<br>
+					</p> 
+				</div>
+
+			</div>
+
+			<div class="margenes">
+				<div class= "rangos">
+					<div class="textoRangos">
+						<h2> DONCELLA </h2>
+					    <h3> 50€ </h3>
+				    </div>
+				    <div class="textoRangos">
+				    	<p>-Envío del juego en físico en la plataforma deseada<br><br> <a href="#doncella"> SABER MÁS </a> </p>
+				    </div>
+			    </div>
+			    <div class= "rangos">
+						<div class="textoRangos">
+							<h2> DIVINO </h2>
+						    <h3> 200€ </h3>
+					    </div>
+					    <div class="textoRangos">
+					    	<p>-Envío de una edición exclusiva del juego<br><br> <a href="#divino"> SABER MÁS </a> </p>
+					    </div>
+				    </div>
+			    </div> 
+			</div> 
+
+
+
+			<div class="bloque" id="redesYDisclaimer">
+
+				<p> <strong> NUESTRAS REDES </strong> </p>
+				<div id="redes">
+					<a href="https://www.instagram.com/abracadabrante.studios/?igshid=NTc4MTIwNjQ2YQ%3D%3D"> <div id="instagram"> </div> </a>
+					<a href="https://twitter.com/abra_cadabrante?t=8P4xXYVmMMsx6B_Uz-C5ag&s=09"> <div id="twitter"> </div> </a>
+					<a href="https://www.youtube.com/@AbracadabranteStudios"> <div id="youtube"> </div> </a>
+			    </div>
+				<p> ATENCIÓN: Esta página simula la campaña de microfinanciación de un videojuego ficticio y no representa un producto real.<br>Práctica de Multimedia, 1º GDDV - Curso 22/23 (Móstoles), URJC. La URJC no se hace responsable del contenido expuesto por el autor. </p>
+			</div>
+
+	    </div>
+
+	</div>
+
+</body> 
+
+
+</html> 
+
+<!-- <div class="bloque" id="ayudanos">
+				    <p> AYÚDANOS </p>
+					<div id="contri">
+						<div class="boton"> <a href="#soldado"> 5€ </a> </div>
+						<div class="boton"> <a href="#soldado"> 20€ </a> </div>
+						<div class="boton"> <a href="#soldado"> 50€ </a>  </div>
+					</div>
+				</div> -->
