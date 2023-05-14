@@ -6,9 +6,14 @@
 	<metas charset "utf-8"/>
 	<title> Main Page </title>
 	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Vollkorn+SC:wght@600&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
-		@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap");
-		@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+		@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Vollkorn+SC:wght@600&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Vollkorn+SC:wght@600&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Shalimar&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Almendra+SC&display=swap');
 
 
 		body {
@@ -38,9 +43,14 @@
 		}
 
 		.bloque h1 {
-			font-family: 'Great Vibes';
+			font-family: 'Vollkorn SC', serif;;
 			font-size: 60px;
 			letter-spacing: 2px;
+		}
+
+		.bloque#info h2 {
+			font-family: 'Herr Von Muellerhoff';
+			font-size: 50px;
 		}
 
 		.boton {
@@ -64,7 +74,7 @@
 			flex-direction: column;
 			justify-content: space-evenly;
 
-			background-color: grey;
+			background-color: unset;
 			width: 80%;
 			height:35%;
 
@@ -85,6 +95,10 @@
 
 		.textoRangos h2,h3 {
 			height: 5px;
+		}
+
+		#columnaCentral .textoRangos h2 {
+			font-size: 50px;
 		}
 
 		.fotos {
@@ -155,6 +169,11 @@
 
 		#navegacion div {
 			margin:5px;
+			background-color: rgba(300, 300, 300, .4);
+
+			width: 250px;
+			height: 20px;
+
 		}
 
 		.bloque#intro {
@@ -188,6 +207,7 @@
 			text-align:center;
 
 			background-image: url("imagen/fondo_marmol.jpg");
+			background-size: cover;
 			border: 4px solid;
 			width: 100%;
 			height:100%;
@@ -279,6 +299,7 @@
 			display: flex;
 			flex-grow: 1;
 			flex-shrink: 1;
+			font-size: 17px;
 
 			justify-content: right;
 			align-items: center;
@@ -287,7 +308,7 @@
 			margin: 30px;
 			padding: 10px;
 
-			background-color: unset;
+			background-color: rgba(300, 300, 300, .4);
 		}
 
 		#contri {
@@ -300,7 +321,7 @@
 		#redesYDisclaimer {
 
 			width: 100%;
-			height: 200px;
+			height: 500px;
 			margin: 0px;
 		}
 
@@ -317,6 +338,7 @@
 		#redes div {
 			width: 40px;
 			height: 40px;
+			margin: 16px;
 		}
 
 		#instagram {
@@ -332,6 +354,13 @@
 		#youtube {
 			background-image: url("imagen/youtube.png");
 			background-size: 100% 100%;
+		}
+
+		#logo {
+			background-image: url("imagen/logo.png");
+			background-size: 100% 100%;
+			width: 100px;
+			height: 100px;
 		}
 
 
@@ -350,16 +379,15 @@
 	<div id="pagina">
 
 		<div class="bloque" id="navegacion">
-				<div> JUANA </div>
 				<div> <a href="#contribuciones"> CONTRIBUCIONES </a> </div>
 				<div> <a href="#info"> INFORMACIÓN </a> </div>
 				<div> <a href="#arte"> ARTE DEL JUEGO </a> </div>
-				<div> PREGUNTAS FRECUENTES </div>
+				<div> <a href="#preguntasFrecuentes"> PREGUNTAS FRECUENTES </a> </div>
 		</div>
 
 		<div class="bloque" id="intro">
 				<div id="trailer">
-					<iframe width="100%" height="100%" src="https://www.youtube.com/embed/3C_KO2Fmqes" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+					<iframe width="100%" height="100%" src="https://www.youtube.com/embed/LMoBWQb-img" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 				</div>
 				<div class="texto" id="descripcion">
 					<p>¡Echa un vistazo al tráiler de "JUANA DE ARCO: LA LLAMADA DE DIOS",<br>una aventura conversacional con rigor histórico que saldrá a la venta este mismo año!</p>
@@ -392,10 +420,10 @@
 			<div id="columnaCentral">
 				<div class="bloque" id="info">
 					<h1>Información General</h1>
-					<p>"Juana de Arco: La llamada de Dios" es una aventura conversacional al más puro estilo de los clásicos Point&Click. Como el propio nombre del juego indica, encarnaremos a la más que famosa e importante figura Juana de Arco, quien fue clave durante el desarrollo de la Guerra de los Cien Años. A lo largo del juego recorreremos la historia de su vida, conociendo de primera mano todos los hechos que la llevaron a ser tan recordada hoy en día. (fotillo juana en png) </p>
-					<h2> REVIVE LA HISTORIA DE JUANA DE ARCO </h2>
+					<p>"Juana de Arco: La llamada de Dios" es una aventura conversacional al más puro estilo de los clásicos Point&Click. Como el propio nombre del juego indica, encarnaremos a Juana de Arco, quien fue clave durante el desarrollo de la Guerra de los Cien Años. A lo largo del juego recorreremos la historia de su vida, conociendo de primera mano todos los hechos que la llevaron a ser tan recordada hoy en día. </p>
+					<h2> Revive la historia de Juana de Arco </h2>
 					<p> Desde Abracadabrante Studios queremos brindarte una experiencia lo más fiel y cercana a la historia real de Juana de Arco; que atravieses todas las dificultades de su vida, como el tener que escapar de su casa a una temprana edad o tener que escuchar juicios constantes hacia ella, debido a las voces que acostumbraba a escuchar. No obstante, también buscamos que disfrutes de todas las glorias de su viaje, lo magnífico de que una simple joven que vivía en el pequeño pueblo de Domrémy supusiese un antes y un después en el transcurso de uno de los conflictos bélicos más grandes del pasado. </p>
-					<h2> CONOCE A PERSONAJES HISTÓRICOS </h2>
+					<h2> Conoce a personajes históricos </h2>
 					<p> A lo largo de tu viaje conocerás a grandes personajes que tuvieron gran importancia en la evolución de nuestra protagonista, guiándola en sus acciones o incluso marcando puntos de inflexión en su propia vida. Nos gustaría presentarte a algunos de ellos, aunque no entraremos en grandes detalles, puesto que creemos que la mejor forma de conocerlos es jugando. <br>
 				<br>
 					<strong>- Carlos VII:</strong> Una gran parte del pueblo francés, incluida nuestra protagonista, esperan con ansias que se convierta en el monarca de la nación. Pese a ser una persona peculiar y un poco extravagante, es el primero en depositar una confianza ciega en Juana, permitiéndole llevar a cabo su misión. (Aquí pondria fotos de cada uno de los personajes, pero como no tenemos bocetos nose) <br>
@@ -405,9 +433,9 @@
 					<strong>  - Simon Musnier: </strong> Es el vecino de Juana, desde pequeños siempre han mantenido una gran relación. Es un joven que sufre de una salud muy delicada, enfermando con frecuencia. Nuestra protagonista lleva años cuidando de él, por lo que Simon tiene un gran aprecio por ella. Estas pequeñas acciones dotan a Juana de una gran fama por su amabilidad en su pueblo natal, Domrémy. Debido a esto, a medida que aumente nuestra popularidad por el territorio francés, será frecuente que diferentes habitantes de las zonas que exploremos nos soliciten su ayuda durante nuestro viaje. Aunque Juana no está obligada a ayudarles,  siempre tratará de ayudar a quién lo necesite. En ocasiones, alguna de estas ayudas altruistas se verá fuertemente recompensada, por lo que te animamos a expandir tu bondad... <br>
 					<br>
 					 </p>
-					<h2> SUMÉRGETE EN SUS BATALLAS... </h2>
+					<h2> Sumérgete en sus batallas... </h2>
 					<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." </p>
-					<h2> ... Y ROMPE LA BARRERA CON EL MÁS ALLÁ</h2>
+					<h2> ... y rompe la barrera con el Más Allá</h2>
 					<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." </p>
 				</div>
 
@@ -432,7 +460,7 @@
 					<h1>Contribuciones</h1>
 					<div class= "rangos" id="soldado">
 						<div class="textoRangos">
-							<h2> SOLDADO </h2>
+							<h2 style="font-family:'Clicker Script', cursive;"> Soldado </h2>
 						    <h3> 5€ </h3>
 					    </div>
 					    <div class="textoRangos">
@@ -441,7 +469,7 @@
 				    </div>
 				    <div class= "rangos" id="delfin">
 						<div class="textoRangos">
-							<h2> DELFÍN </h2>
+							<h2 style="font-family: 'Shalimar', cursive;"> Delfín </h2>
 						    <h3> 20€ </h3>
 					    </div>
 					    <div class="textoRangos">
@@ -450,7 +478,7 @@
 				    </div>
 				    <div class= "rangos" id="doncella">
 						<div class="textoRangos">
-							<h2> DONCELLA </h2>
+							<h2 style="font-family: 'Herr Von Muellerhoff';"> Doncella </h2>
 						    <h3> 50€ </h3>
 					    </div>
 					    <div class="textoRangos">
@@ -459,7 +487,7 @@
 				    </div>
 				    <div class= "rangos" id="divino">
 						<div class="textoRangos">
-							<h2> DIVINO </h2>
+							<h2 style="font-family: 'Almendra SC', serif; letter-spacing: 5px"> DIVINO </h2>
 						    <h3> 200€ </h3>
 					    </div>
 					    <div class="textoRangos">
@@ -468,24 +496,24 @@
 				    </div>
 				</div>
 
-				<div class="bloque" id="PREGUNTAS">
+				<div class="bloque" id="objetivos">
 					<h1>Objetivos</h1>
-					<p> <strong>1º- 5.000€</strong> <br>
+					<p> <strong style="font-size: 30px">1º- 5.000€</strong> <br>
 					Lanzamiento del juego en Steam: 6 capítulos rejugables, libro de arte digital y banda sonora digital.<br>
 					Campaña de publicidad.
 					<br>
-					<strong>2º- 10.000€</strong> <br>
+					<strong style="font-size: 30px">2º- 10.000€</strong> <br>
 					Lanzamiento de la Edición Física<br>
 					Lanzamiento de la Edición Especial (con libro de arte del juego)<br>
 					Lanzamiento de la Edición Coleccionista (con banda sonora y figura)
 					<br>
-					<strong>3º- 20.000€</strong> <br>
+					<strong style="font-size: 30px">3º- 20.000€</strong> <br>
 					Lanzamiento del DLC JEANNE D'ARC: Justicia Divina, en el cual los jugadores vivirán en primera persona el juicio en el que Juana quedó absuelta de sus supuestos crímenes, décadas después de su muerte.<br>
 					<br>
 					</p> 
 				</div>
 
-				<div class="bloque" id="PREGUNTAS">
+				<div class="bloque" id="preguntasFrecuentes">
 					<h1>Preguntas Frecuentes</h1>
 					<p> <strong> ¿Tenéis planeado el lanzamiento del juego en otras plataformas además de las ya anunciadas? </strong> <br>
 					No está en nuestra mente preparar el juego para lanzarlo en otras plataformas. El juego será lanzado para PC, Nintendo Switch y dispositivos móviles ya que son las plataformas que nos permiten explotar al máximo la jugabilidad. <br>
@@ -536,6 +564,9 @@
 					<a href="https://twitter.com/abra_cadabrante?t=8P4xXYVmMMsx6B_Uz-C5ag&s=09"> <div id="twitter"> </div> </a>
 					<a href="https://www.youtube.com/@AbracadabranteStudios"> <div id="youtube"> </div> </a>
 			    </div>
+			    <p> Equipo Abracadabrante:</p>
+			    <div id="logo"> </div>
+			    <p> Sergio Aparicio Pons<br>David del Castillo Enríquez<br>Laura Escandell Almeida<br>Ismael Esteban Liberal<br>Laura Facenda Estrella<br>Javier Sánchez Serantes </p>
 				<p> ATENCIÓN: Esta página simula la campaña de microfinanciación de un videojuego ficticio y no representa un producto real.<br>Práctica de Multimedia, 1º GDDV - Curso 22/23 (Móstoles), URJC. La URJC no se hace responsable del contenido expuesto por el autor. </p>
 			</div>
 
