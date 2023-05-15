@@ -22,6 +22,19 @@
 
 		}
 
+		strong {
+			font-size: 20px;
+		}
+
+		form {
+			display: flex;
+			flex-direction: row;
+
+			height: 50px;
+
+			margin: 16px;"
+		}
+
 		.bloque {
 			position: relative;
 			width: 600px;
@@ -156,8 +169,8 @@
 			align-items: center;
 			z-index: 10;
 
-			background-image: url("imagen/dibujos_concept/mapa_laura_navegacion.jpg");
-			background-size: 100%;
+			background-image: url("imagen/fondo_hierro.jpg");
+			background-size: cover;
 			background-color: white;
 			height: 75px;
 			width: 100%;
@@ -186,7 +199,7 @@
 
 			background-color: unset;
 			background-image: url("imagen/alfombra.png");
-			top: 40px;
+			top: 10px;
 			height: 500px;
 			width: 800px;
 			border: unset;
@@ -356,11 +369,38 @@
 			background-size: 100% 100%;
 		}
 
-		#logo {
+		#miembros {
+			position: relative;
+			left: -10px;
+
+			display: flex;
+			flex-direction: row;
+			align-items:center;
+			justify-content: space-evenly;
+
+			width: 700px;
+		}
+
+		.logo {
 			background-image: url("imagen/logo.png");
 			background-size: 100% 100%;
 			width: 100px;
 			height: 100px;
+		}
+
+		#abracadabrante {
+			display:flex;
+			flex-direction:column;
+			justify-content:center;
+			align-items: center;
+			margin: 16px 0px 0px 0px;
+		}
+
+		#abracadabrante p {
+			position: relative;
+			top: -10px;
+
+			font-family:'Clicker Script', cursive;
 		}
 
 
@@ -383,6 +423,11 @@
 				<div> <a href="#info"> INFORMACIÓN </a> </div>
 				<div> <a href="#arte"> ARTE DEL JUEGO </a> </div>
 				<div> <a href="#preguntasFrecuentes"> PREGUNTAS FRECUENTES </a> </div>
+		</div>
+
+		<div id="abracadabrante">
+			<div class="logo"> </div>
+			<p> <strong> Abracadabrante Studios </strong> </p>
 		</div>
 
 		<div class="bloque" id="intro">
@@ -498,16 +543,16 @@
 
 				<div class="bloque" id="objetivos">
 					<h1>Objetivos</h1>
-					<p> <strong style="font-size: 30px">1º- 5.000€</strong> <br>
+					<p> <strong>1º- 5.000€</strong> <br>
 					Lanzamiento del juego en Steam: 6 capítulos rejugables, libro de arte digital y banda sonora digital.<br>
 					Campaña de publicidad.
 					<br>
-					<strong style="font-size: 30px">2º- 10.000€</strong> <br>
+					<strong>2º- 10.000€</strong> <br>
 					Lanzamiento de la Edición Física<br>
 					Lanzamiento de la Edición Especial (con libro de arte del juego)<br>
 					Lanzamiento de la Edición Coleccionista (con banda sonora y figura)
 					<br>
-					<strong style="font-size: 30px">3º- 20.000€</strong> <br>
+					<strong>3º- 20.000€</strong> <br>
 					Lanzamiento del DLC JEANNE D'ARC: Justicia Divina, en el cual los jugadores vivirán en primera persona el juicio en el que Juana quedó absuelta de sus supuestos crímenes, décadas después de su muerte.<br>
 					<br>
 					</p> 
@@ -527,7 +572,12 @@
 					<strong> ¿Contáis con algún otro proyecto al que pueda echar un vistazo? </strong> <br>
 					Lastimosamente, este es el primer proyecto en el que trabajamos como un estudio profesional. Aunque nuestros miembros han desarrollado juegos previamente, estos no han sido lanzados al mercado oficialmente. No obstante, confiamos en que este lanzamiento nos permita crecer como estudio y desarrollar otras ideas (que nos morimos de ganas de compartir con vosotros). <br>
 					<br>
-					</p> 
+					</p>
+					<p> <strong> ¡Déjanos tu pregunta o comentario! </strong> </p>
+					<form>
+                        <textarea rows="5" cols="50"></textarea><br><br>
+                        <input type="submit" value="Enviar comentario">
+                    </form>
 				</div>
 
 			</div>
@@ -565,9 +615,12 @@
 					<a href="https://www.youtube.com/@AbracadabranteStudios"> <div id="youtube"> </div> </a>
 			    </div>
 			    <p> Equipo Abracadabrante:</p>
-			    <div id="logo"> </div>
-			    <p> Sergio Aparicio Pons<br>David del Castillo Enríquez<br>Laura Escandell Almeida<br>Ismael Esteban Liberal<br>Laura Facenda Estrella<br>Javier Sánchez Serantes </p>
-				<p> ATENCIÓN: Esta página simula la campaña de microfinanciación de un videojuego ficticio y no representa un producto real.<br>Práctica de Multimedia, 1º GDDV - Curso 22/23 (Móstoles), URJC. La URJC no se hace responsable del contenido expuesto por el autor. </p>
+			    <div id="miembros">
+				    <p style="text-align: right"> Sergio Aparicio Pons<br>David del Castillo Enríquez<br>Laura Escandell Almeida </p>
+				    <div class="logo"> </div>
+				    <p style="text-align: left">Ismael Esteban Liberal<br>Laura Facenda Estrella<br>Javier Sánchez Serantes </p>
+			    </div>
+			    <p> ATENCIÓN: Esta página simula la campaña de microfinanciación de un videojuego ficticio y no representa un producto real.<br>Práctica de Multimedia, 1º GDDV - Curso 22/23 (Móstoles), URJC. La URJC no se hace responsable del contenido expuesto por el autor. </p>
 			</div>
 
 	    </div>
